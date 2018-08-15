@@ -1,0 +1,260 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home_slider
+		.container
+			.row
+				.col
+					h1 Hi there! We are the new kids on the block
+						br
+						| and  we build awesome websites and mobile apps.
+					p
+						a.btn.btn-more(href="#") WORK WITH US!
+
+	section.home_services
+		.container
+			.row
+				.col
+					.title-page
+						h2 SERVICES WE PROVIDE
+						p
+							| We are working with both individuals and businesses from all over the globe
+							br 
+							|to create awesome websites and applications.
+			.row
+				.col-lg-3.col-md-6.col-12
+					img(src="img/home_icon_1.png", alt="alt")
+					h3 Branding
+					p.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. 
+				.col-lg-3.col-md-6.col-12
+					img(src="img/home_icon_2.png", alt="alt")
+					h3 Design
+					p.text Sed ut perspiciatis unde omnis iste natus error sit voluptatem   
+				.col-lg-3.col-md-6.col-12
+					img(src="img/home_icon_3.png", alt="alt")
+					h3 Development
+					p.text At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium. 
+				.col-lg-3.col-md-6.col-12
+					img(src="img/home_icon_4.png", alt="alt")
+					h3 ROCKET SCIENCE
+					p.text Et harum quidem rerum est et expedita distinctio. Nam libero tempore.
+
+	section.home_team
+		.container
+			.row
+				.col
+					.title-page
+						h2 MEET OUR BEAUTIFUL TEAM
+						p
+							| We are a small team of designers and developers, who help brands with big ideas.
+			.row
+				.col-lg-3.col-md-6.col-12
+					img(src="img/home_avatar_1.png", alt="alt")
+					h3 Branding
+					h4 CEO / Marketing Guru
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					ul
+						li
+							a(href="#").fa.fa-facebook-f
+						li
+							a.fa.fa-twitter(href="#")
+						li
+							a.fa.fa-instagram(href="#")
+						li
+							a.fa.fa-envelope(href="#")
+				.col-lg-3.col-md-6.col-12
+					img(src="img/home_avatar_1.png", alt="alt")
+					h3 Design
+					h4 Creative Director
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					ul
+						li
+							a(href="#").fa.fa-facebook-f
+						li
+							a.fa.fa-twitter(href="#")
+						li
+							a.fa.fa-instagram(href="#")
+						li
+							a.fa.fa-envelope(href="#")   
+				.col-lg-3.col-md-6.col-12
+					img(src="img/home_avatar_1.png", alt="alt")
+					h3 Development
+					h4 Lead Designer
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					ul
+						li
+							a(href="#").fa.fa-facebook-f
+						li
+							a.fa.fa-twitter(href="#")
+						li
+							a.fa.fa-instagram(href="#")
+						li
+							a.fa.fa-envelope(href="#")
+				.col-lg-3.col-md-6.col-12
+					img(src="img/home_avatar_1.png", alt="alt")
+					h3 ROCKET SCIENCE
+					h4 SEO / Developer
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					ul
+						li
+							a(href="#").fa.fa-facebook-f
+						li
+							a.fa.fa-twitter(href="#")
+						li
+							a.fa.fa-instagram(href="#")
+						li
+							a.fa.fa-envelope(href="#")
+	
+	section.home_skill
+		.container
+			.row
+				.col
+					.title-page
+						h2 WE GOT SKILLS!
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+							br 
+							|ttempor incididunt ut labore et dolore magna aliqua.
+			.row
+				-for(x = 1;x < 5;x++)
+					.col-lg-3.col-md-6.col-12
+						-if(x==1)
+							.progress-circle.progress-90
+								span 90%
+							h3 WEB DESIGN
+						-if(x==2)
+							.progress-circle.progress-75
+								span 75%
+							h3 HTML / CSS
+						-if(x==3)
+							.progress-circle.progress-70
+								span 70%
+							h3 GRAPHIC DESIGN
+						-if(x==4)
+							.progress-circle.progress-85
+								span 85%
+							h3 UI / UX
+
+	section.home_portfolio
+			.container
+				.row
+					.col
+						.title-page
+							h2 OUR PORTFOLIO
+							p
+								|Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+								br
+								| consectetur, adipisci velit, sed quia non numquam
+				.row
+					.col
+						.portfolio_menu
+							p
+								a(href='#') ALL
+							p
+								a(href='#') WEB
+							p
+								a(href='#') APPS
+							p
+								a(href='#') ICONS
+				.row
+					.col-md-6.portfolio_custom
+						img.img-fluid(src="./img/home_portfolio_1.png", alt="")
+						p ISOMETRIC PERSPECTIVE MOCK-UP
+					.col-md-6.portfolio_custom
+						img.img-fluid(src="./img/home_portfolio_2.png", alt="")
+						p TIME ZONE APP UI
+					.col-md-6.portfolio_custom
+						img.img-fluid(src="./img/home_portfolio_3.png", alt="")
+						p VIRO MEDIA PLAYERS UI
+					.col-md-6.portfolio_custom
+						img.img-fluid(src="./img/home_portfolio_4.png", alt="")
+						p BLOG / MAGAZINE FLAT UI KIT
+				.row
+					.col
+						p
+							a.port_button.shadow-sm.btn.btn-more(href="#") LOAD MORE PROJECTS
+
+	section.home_people
+			.container
+				.row
+					.col
+						.title-page
+							h2 GET IN TOUCH
+							p
+								|Our clients love us!
+
+
+				.row
+					.col-md-6
+						.row
+							.col-md-4
+								img(src="img/home_avatar_1.png", alt="")
+							.col-md-8
+								.text2
+									p “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+									h5 CHANEL IMAN
+									h6 CEO of Pinterest
+
+					.col-md-6
+						.row
+							.col-md-4
+								img(src="img/home_avatar_1.png", alt="")
+							.col-md-8
+								.text2
+									p “Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+									h5 ADRIANA LIMA
+									h6 Founder of Instagram
+
+					.col-md-6
+						.row
+							.col-md-4
+								img(src="img/home_avatar_1.png", alt="")
+							.col-md-8
+								.text2
+									p “Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+									h5 ANNE HATHAWAY
+									h6 Lead Designer at Behance
+
+					.col-md-6
+						.row
+							.col-md-4
+								img(src="img/home_avatar_1.png", alt="")
+							.col-md-8
+								.text2
+									p “Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”
+									h5 EMMA STONE
+									h6 Co-Founder of Shazam
+
+	section.home_contact
+			.container
+				.row
+					.col
+						.title-page
+							h2 WHAT POEPLE SAY ABOUT US
+							p
+								|1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+				.row
+					.col-md-2
+					.col-md-4
+						.form-group
+							input#exampleFormControlInput1.form-control(type='text' placeholder='Your name *')
+					.col-md-4
+						.form-group
+							input#exampleFormControlInput1.form-control(type='email' placeholder='Your email *')
+					.col-md-2
+				.row
+					.col-md-2
+					.col-md-8
+						.form-group
+							.textarea#exampleFormControlTextarea1.form-control(rows='6' placeholder='Your message *')
+					.col-md-2
+
+				.row
+					.col
+						p
+							a.contact_button(href="#") SEND MESSAGE
